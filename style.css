@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 1rem;
+    
+}
+
+p {
+    margin: 0!important;
+}
+
+header {
+    background-color: #fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .hide-on-desktop {
+        display: none;
+    }
+}
