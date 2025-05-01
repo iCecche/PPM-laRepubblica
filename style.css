@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,18 +19,76 @@ p {
     margin: 0!important;
 }
 
-header {
-    background-color: #fff;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.h1-lg {
+    font-size: 2.6rem;
 }
 
-::-webkit-scrollbar{
-    display: none;
+.link-style-none {
+    color: inherit;
+    text-decoration: none;
+}
+
+.color-gray, #secondary-nav .color-gray, header .color-gray {
+    color: #666;
+}
+ 
+header {
+    background-color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ff-playfair-text {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+#focus-article {
+    color: #fefefe;
+    background-color: #42505f;
+    padding: 0;
+}
+
+#primo-piano, .column-article {
+    padding: 0 !important;
+}
+
+.rubrica-card {
+    background-color: #e9e9e9;;
 }
 
 .btn-link {
     text-decoration: none;
+}
+
+.underlined {
+    text-underline-offset: 0.8rem;
+    text-decoration: 0.4rem underline;
+    text-decoration-color: orange;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.magazine-text-card {
+    position: relative;
+    top: -5rem;
+    background-color: #fefefe;
+}
+
+.video-text-card {
+    position: relative;
+    top: -12rem;
+    background-color: transparent;
+}
+
+#megazine mark {
+    background-color: #e9e9e9;
 }
 
 @media screen and (min-width: 768px){
