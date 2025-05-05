@@ -9,269 +9,896 @@
     <title>laRepubblica</title>
 </head>
 <body>
-    <header class="container sticky-top border-bottom" >
-        <nav id="mobile-nav" class="navbar mx-auto hide-on-desktop">
-            <button class="btn btn-link text-decoration-none"><i class="bi bi-bell-fill fs-2"></i></button>
-            <button class="btn btn-link text-decoration-none fw-bold fs-5 color-gray text-uppercase">abbonati</button>
-            <button class="btn btn-link text-decoration-none"><i class="bi bi-apple fs-2"></i></button>
+    <header class="container sticky-top border-bottom px-0 z-3">
+        <nav id="mobile-nav" class="navbar d-flex justify-content-between flex-nowrap mx-auto px-2 pb-1">
+            <div id="left-nav" class="d-flex w-100 justify-content-start">
+                <button class="btn btn-link text-decoration-none color-gray d-md-flex align-items-center gap-2 fs-5 d-none"><i class="bi bi-list fs-2"></i><span class="d-none d-md-block fs-4">Menu</span></button>
+                <a href="#" class="btn btn-link text-decoration-none color-gray d-md-flex align-items-center gap-2 fs-5 d-none"><i class="bi bi-search fs-2"></i><span class="d-none d-md-block fs-4">Cerca</span></a>
+                <a href="#" class="btn btn-link text-decoration-none color-gray d-flex align-items-center gap-2 fs-5"><i class="bi bi-bell-fill fs-2"></i><span class="d-none d-md-block fs-4">Notifiche</span></a>
+            </div>
+            <div id="center-nav" class="d-flex w-100 justify-content-center">
+                <a href="#" class="btn btn-link text-decoration-none fw-bold fs-5 color-gray text-uppercase">abbonati</a>
+            </div>
+            <div id="right-nav" class="d-flex w-100 justify-content-end">
+                
+                <a href="#" class="btn btn-link text-decoration-none color-gray w-auto"><i class="bi bi-apple fs-2"></i></a>
+                <a href="#" class="btn btn-link text-decoration-none color-gray align-items-center gap-2 fs-5 d-none d-md-flex"><span class="d-none d-md-inline fs-4">Accedi</span><i class="bi bi-person-circle fs-2"></i></a>
+            </div>
         </nav>
-        <nav class="navbar mx-auto">
-            <button class="btn btn-link"><i class="bi bi-list fs-2"></i></button>
-            <h1 class="h1-lg ff-playfair-text">la Repubblica</h1>
-            <button class="btn btn-link text-decoration-none">icon</button>
+        <nav class="navbar mx-auto px-2 d-md-none" id="navbar">
+            <button class="btn btn-link color-gray"><i class="bi bi-list fs-1"></i></button>
+            <a href="#" class="text-decoration-none"><h1 class="h1-lg ff-playfair-text color-black mb-0">la Repubblica</h1></a>
+            <a href="#" class="btn btn-link text-decoration-none color-gray"><i class="bi bi-person-circle fs-2"></i></a>
         </nav>
     </header>
     <main>
-        <div class="container border-bottom pt-3 pb-3">
-            <p class="text-center">29 APRILE 2025 - AGGIORNATO ALLE 16.51</p>
-        </div>
-        <div id="focus-article" class="container d-flex justify-content-center gap-3 border-bottom py-3">
-            <figure class="col-4 d-flex mb-0">
-                <img src="https://placehold.co/600x300" alt="focus-article-img" class="img-fluid rounded">
-            </figure>
-            <div class="col-7 d-flex align-items-center">
-                <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, magnam. Excepturi et alias quae officiis.</p>
-            </div>
-        </div>
-        <div id="secondary-nav" class="container border-bottom px-3 py-2">
-            <div class="row d-flex flex-nowrap overflow-auto px-3 py-2">
-                <button class="btn btn-link text-decoration-none dropdown-toggle col-4 col-md-3 fs-4 fw-bold color-gray" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown1
-                </button>
-                <button class="btn btn-link text-decoration-none dropdown-toggle col-4 col-md-3 fs-4 fw-bold color-gray" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown2
-                </button>
-                <button class="btn btn-link text-decoration-none dropdown-toggle col-4 col-md-3 fs-4 fw-bold color-gray" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown3
-                </button>
-                <button class="btn btn-link text-decoration-none col-4 col-md-3 fs-4 fw-bold color-gray">Papa Francesco</button>
-                <button class="btn btn-link text-decoration-none col-4 col-md-3 fs-4 fw-bold color-gray">Blackout Spagna</button>
-                <button class="btn btn-link text-decoration-none col-4 col-md-3 fs-4 fw-bold color-gray">Elezioni Canada</button>
-            </div>
-        </div>
-        <section id="primo-piano" class="container mt-5">
-            <h1 class="text-center mb-5 underlined">In primo Piano</h1>
-            <article class="container d-flex flex-column gap-3 mt-3 mb-5 column-article">
-                <figure class="col-12 d-flex justify-content-center">
-                    <img src="https://placehold.co/600x600" alt="article-img" class="img-fluid rounded">
-                </figure>
-                <div class="col-11 d-flex flex-column align-items-center mx-auto">
-                    <h4 class="text-center text-uppercase text-orange">La nuova america</h6>
-                    <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
+        <div class="container">
+            <div class="row">
+                <div class="w-100 px-0 py-3 order-md-3">
+                    <p class="text-center">29 APRILE 2025 - AGGIORNATO ALLE 16.51</p>
                 </div>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author text-left">di Raffaele Palladino</span>
+                <div id="focus-article" class="container d-flex align-items-center justify-content-center gap-3 gap-lg-1 border-bottom py-3 order-md-1">
+                    <figure class="col-4 col-lg-2 d-flex justify-content-center mb-0">
+                        <img src="https://placehold.co/200x120" alt="focus-article-img" class="img-fluid rounded">
+                    </figure>
+                    <div class="col-7 h-100 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
+                        <p class="fs-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, magnam. Excepturi et alias quae officiis.</p>
+                    </div>
                 </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
+                <div class="container d-md-flex justify-content-center mx-auto mt-5 mb-2 px-0 d-none order-md-2">
+                    <figure class="m-0">
+                        <img src="https://placehold.co/300x150" alt="logo img" class="img-fluid">
+                    </figure>
                 </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
-                </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
-                </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-            <article class="container d-flex flex-column gap-3 mt-5 mb-5 column-article">
-                <figure class="col-12 d-flex justify-content-center">
-                    <img src="https://placehold.co/600x600" alt="article-img" class="img-fluid rounded">
-                </figure>
-                <div class="col-11 d-flex flex-column align-items-center mx-auto">
-                    <h4 class="text-center text-uppercase text-orange">La nuova america</h6>
-                    <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
-                </div>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
-                </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-            <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-left">
-                    <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
-                    <span class="author">di Raffaele Palladino</span>
-                </div>
-                <figure class="col-4 d-flex align-items-center">
-                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
-                </figure>
-            </article>
-        </section>
-        <section id="megazine">
-            <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">Magazine</h1>
-            <div class="container my-5 border-bottom">
-                <figure class="d-flex justify-content-center col-11 mx-auto">
-                    <img src="https://placehold.co/600x300" alt="" class="img-fluid rounded">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
-                    <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
-                    <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
-                    <span class="text-center fs-5">di Raffaele Palladino</span>
-                </div>
-            </div>
-            <div class="container my-5 border-bottom">
-                <figure class="d-flex justify-content-center col-11 mx-auto">
-                    <img src="https://placehold.co/600x300" alt="" class="img-fluid rounded">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
-                    <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
-                    <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
-                    <span class="text-center fs-5">di Raffaele Palladino</span>
-                </div>
-            </div>
-            <div class="container my-5 border-bottom">
-                <figure class="d-flex justify-content-center col-11 mx-auto">
-                    <img src="https://placehold.co/600x300" alt="" class="img-fluid rounded">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
-                    <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
-                    <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
-                    <span class="text-center fs-5">di Raffaele Palladino</span>
-                </div>
-            </div>
-        </section>
-        <section id="rubrica">
-            <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">Rubrica</h1>
-            <div class="container col-11 d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
-                <figure class="col-2 mb-0">
-                    <img src="https://placehold.co/300x300" alt="" class="img-fluid rounded-circle">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2">
-                    <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni animi</h3>
-                    <div>
-                        <span class="fs-5">Lorem Ipsum</span>
-                        <span class="fs-5">di Raffaele Palladino</span>
+                <div id="secondary-nav" class="container col-lg-12 d-flex justify-content-center border order-md-4">
+                    <div class="container col-4 col-md-6 col-lg-4 d-md-flex d-none border-end">
+                        <button class="btn btn-link text-decoration-none dropdown-toggle col-5 col-md-3 col-lg-4 fs-4 d-none d-md-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lorem</button>
+                        <button class="btn btn-link text-decoration-none dropdown-toggle col-5 col-md-3 col-lg-4 fs-4 d-none d-md-block" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lorem</button>
+                        <button class="btn btn-link text-decoration-none dropdown-toggle col-5 col-md-3 col-lg-4 fs-4 d-none d-md-block" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lorem</button>
+                    </div>
+                    <div class="container col-12 col-md-6 col-lg-8 d-flex flex-nowrap overflow-auto px-3 py-2">
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Papa Francesco</a>
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Blackout Spagna</a>
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Elezioni Canada</a>
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Conclave 2025</a>
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Jurassic Park</a>
+                        <a href="#" class="btn btn-link text-decoration-none col-5 col-md-6 col-lg-3 fs-4 link">Donald Trump</a>
                     </div>
                 </div>
             </div>
-            <div class="container col-11 d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
-                <figure class="col-2 mb-0">
-                    <img src="https://placehold.co/300x300" alt="" class="img-fluid rounded-circle">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2">
-                    <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni animi</h3>
-                    <div>
-                        <span class="fs-5">Lorem Ipsum</span>
-                        <span class="fs-5">di Raffaele Palladino</span>
+            <div id="sections-wrapper" class="container col-12 order-md-5 px-0">
+                <div class="row d-flex flex-column flex-lg-row border-start border-end border-bottom px-0">
+                    <div id="left-column1" class="px-0 col-lg-9 order-lg-1 px-0">
+                        <section id="primo-piano" class="container col-12 order-lg-1 mt-5">
+                            <h1 class="text-center mb-5 underlined">In primo Piano</h1>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex flex-column gap-3 mt-3 mb-5 column-article">
+                                    <figure class="col-12 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="img-article1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 d-flex flex-column align-items-center mx-auto">
+                                        <h4 class="text-center text-uppercase text-orange">La nuova america</h6>
+                                        <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-article2" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-article3" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-article4" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex flex-column gap-3 mt-5 mb-5 column-article">
+                                    <figure class="col-12 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="img-article5" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 d-flex flex-column align-items-center mx-auto">
+                                        <h4 class="text-center text-uppercase text-orange">La nuova america</h6>
+                                        <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-article6" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-article7" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                        </section>
+                        <section id="megazine" class="col-12 d-lg-flex flex-lg-wrap justify-content-lg-start flex-lg-row order-lg-2">
+                            <h1 class="col-12 text-center my-5 underlined ff-playfair-text h1-lg">Magazine</h1>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto">
+                                <div class="my-5 border-bottom ">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 col-lg-7 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine2" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine3" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine4" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine5" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine6" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-11 mx-auto col-lg-6">
+                                <div class="my-5 border-bottom">
+                                    <figure class="d-flex justify-content-center col-11 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-megazine7" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 d-flex flex-column gap-2 mx-auto py-4 magazine-text-card">
+                                        <span class="text-center fs-5"><mark class="px-3 rounded">Lorem Ipsum</mark></span>
+                                        <h2 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span class="text-center fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </section>
+                        <section id="il-giorno" class="">
+                            <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">I fatti del giorno</h1>
+                            <a href="#" class="text-decoration-none color-black">
+                                <div class="my-5 border-bottom d-flex flex-column flex-lg-row-reverse justify-content-lg-start">
+                                    <figure class="d-flex justify-content-center col-12 col-lg-7 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-day1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 col-lg-4 d-flex flex-column gap-2 mx-auto py-4">
+                                        <h3 class="text-center text-lg-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h3>
+                                        <span class="text-center text-lg-start fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <div class="my-5 border-bottom d-flex flex-column flex-lg-row-reverse justify-content-lg-start">
+                                    <figure class="d-flex justify-content-center col-12 col-lg-7 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-day1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 col-lg-4 d-flex flex-column gap-2 mx-auto py-4">
+                                        <h3 class="text-center text-lg-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h3>
+                                        <span class="text-center text-lg-start fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black">
+                                <div class="my-5 border-bottom d-flex flex-column flex-lg-row-reverse justify-content-lg-start">
+                                    <figure class="d-flex justify-content-center col-12 col-lg-7 mx-auto">
+                                        <img src="https://placehold.co/600x300" alt="img-day1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-9 col-lg-4 d-flex flex-column gap-2 mx-auto py-4">
+                                        <h3 class="text-center text-lg-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit? Dolor sit amet consectetur adipisicing elit.</h3>
+                                        <span class="text-center text-lg-start fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </section>
                     </div>
-                </div>
-            </div>
-            <div class="container col-11 d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
-                <figure class="col-2 mb-0">
-                    <img src="https://placehold.co/300x300" alt="" class="img-fluid rounded-circle">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2">
-                    <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni animi</h3>
-                    <div>
-                        <span class="fs-5">Lorem Ipsum</span>
-                        <span class="fs-5">di Raffaele Palladino</span>
-                    </div>
-                </div>
-            </div>
-            <div class="container col-11 d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
-                <figure class="col-2 mb-0">
-                    <img src="https://placehold.co/300x300" alt="" class="img-fluid rounded-circle">
-                </figure>
-                <div class="col-9 d-flex flex-column gap-2">
-                    <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni animi</h3>
-                    <div>
-                        <span class="fs-5">Lorem Ipsum</span>
-                        <span class="fs-5">di Raffaele Palladino</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="mt-5 border-top">
-            <h1 class="text-center underlined ff-playfair-text h1-lg mt-5">Video del giorno</h1>
-            <div class="container my-5">
-                <div class="row d-flex flex-nowrap overflow-auto mx-2">
-                    <div class="d-flex col-10 position-relative justify-content-center align-items-center">
-                        <figure>
-                            <img src="https://placehold.co/400x500" alt="" class="img-fluid rounded-4">
-                        </figure>
-                        <div class="position-absolute text-left video-text-card">
-                            <span class="fs-4">Lorem Ipsum</span>
-                            <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                    <div id="right-column1" class="col-lg-3 align-items-end border-start order-lg-2 px-0">
+                        <div class="sticky-wrapper sticky-lg-top z-0 py-lg-5 top-5">
+                            <section id="video-del-giorno" class="container mt-5 border-sm-top border-bottom col-12 order-lg-1">
+                                <h1 class="text-center underlined ff-playfair-text h1-lg mt-5">Video del giorno</h1>
+                                <div class="container my-5">
+                                    <div class="row d-flex flex-row flex-lg-column align-items-center flex-nowrap overflow-auto overflow-lg-hidden mx-2 gap-lg-5">
+                                        <div class="d-flex col-10 col-md-12 position-relative justify-content-center align-items-center">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x600" alt="video-del-giorno1" class="img-fluid rounded-4">
+                                                </figure>
+                                                <div class="col-md-6 col-lg-9 position-absolute text-left video-text-card">
+                                                    <span class="fs-4 fw-normal">Lorem Ipsum</span>
+                                                    <h3 class="fs-2 fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="d-flex col-10 col-md-12 position-relative justify-content-center align-items-center">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x600" alt="video-del-giorno2" class="img-fluid rounded-4">
+                                                </figure>
+                                                <div class="col-md-6 col-lg-9 position-absolute text-left video-text-card">
+                                                    <span class="fs-4 fw-normal">Lorem Ipsum</span>
+                                                    <h3 class="fs-2 fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="d-flex col-10 col-md-12 position-relative justify-content-center align-items-center">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x600" alt="video-del-giorno3" class="img-fluid rounded-4">
+                                                </figure>
+                                                <div class="col-md-6 col-lg-9 position-absolute text-left video-text-card">
+                                                    <span class="fs-4 fw-normal">Lorem Ipsum</span>
+                                                    <h3 class="fs-2 fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="rubrica" class="container col-12 border-bottom">
+                                <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">Rubrica</h1>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-rubrica1" class="img-fluid rounded-circle">
+                                        </figure>
+                                        <div class="col-9 col-lg-8 d-flex flex-column gap-2">
+                                            <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5"><span class="text-orange fs-4 fw-bold text-uppercase">Lorem</span> di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-rubrica2" class="img-fluid rounded-circle">
+                                        </figure>
+                                        <div class="col-9 col-lg-8 d-flex flex-column gap-2">
+                                            <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5"><span class="text-orange fs-4 fw-bold text-uppercase">Lorem</span> di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-rubrica3" class="img-fluid rounded-circle">
+                                        </figure>
+                                        <div class="col-9 col-lg-8 d-flex flex-column gap-2">
+                                            <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5"><span class="text-orange fs-4 fw-bold text-uppercase">Lorem</span> di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-rubrica4" class="img-fluid rounded-circle">
+                                        </figure>
+                                        <div class="col-9 col-lg-8 d-flex flex-column gap-2">
+                                            <h3 class="mb-0">Lorem ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5"><span class="text-orange fs-4 fw-bold text-uppercase">Lorem</span> di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </section>
+                            <section id="podcast" class="container col-12 border-bottom">
+                                <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">Podcast</h1>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-podcast1" class="img-fluid rounded-4">
+                                        </figure>
+                                        <div class="col-9 col-lg-7 d-flex flex-column gap-2">
+                                            <h3 class="mb-0"><span class="text-orange">Lorem</span> ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-podcast2" class="img-fluid rounded-4">
+                                        </figure>
+                                        <div class="col-9 col-lg-7 d-flex flex-column gap-2">
+                                            <h3 class="mb-0"><span class="text-orange">Lorem</span> ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-podcast3" class="img-fluid rounded-4">
+                                        </figure>
+                                        <div class="col-9 col-lg-7 d-flex flex-column gap-2">
+                                            <h3 class="mb-0"><span class="text-orange">Lorem</span> ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black col-11 col-lg-12">
+                                    <div class="container d-flex align-items-center gap-4 rubrica-card px-3 py-3 mx-auto my-4 rounded-4">
+                                        <figure class="col-2 col-lg-4 mb-0">
+                                            <img src="https://placehold.co/300x300" alt="img-podcast4" class="img-fluid rounded-4">
+                                        </figure>
+                                        <div class="col-9 col-lg-7 d-flex flex-column gap-2">
+                                            <h3 class="mb-0"><span class="text-orange">Lorem</span> ipsum dolor corporis deleniti nesciunt magni</h3>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </section>
                         </div>
                     </div>
-                    <div class="d-flex col-10 position-relative justify-content-center align-items-center">
-                        <figure>
-                            <img src="https://placehold.co/400x500" alt="" class="img-fluid rounded-4">
-                        </figure>
-                        <div class="position-absolute text-left video-text-card">
-                            <span class="fs-4">Lorem Ipsum</span>
-                            <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
-                        </div>
+                </div>
+                <div class="row d-flex flex-column flex-lg-row border-start border-end border-bottom px-0">
+                    <div id="left-column2" class="px-0 pt-5 col-lg-9 order-lg-1">
+                        <section class="d-flex flex-row flex-wrap" id="custom-content">
+                            <a href="#" class="text-decoration-none color-black col-12">
+                                <article class="container d-flex flex-column gap-3 mt-3 mb-5 column-article">
+                                    <figure class="col-12 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="img-custom1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 d-flex flex-column align-items-center mx-auto">
+                                        <h4 class="text-center text-uppercase text-orange">La nuova america</h6>
+                                        <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6">
+                                <article class="container d-flex gap-5 px-3 py-5 border-top border-bottom">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/400x200" alt="img-custom2" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6 border-bottom border-start border-top">
+                                <article class="container px-3 py-5">
+                                    <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                        </section>
+                        <section id="lo-sport-del-giorno" class="d-flex flex-row flex-wrap">
+                            <h1 class="col-12 text-center my-5 underlined-blue ff-playfair-text h1-lg">Lo sport del giorno</h1>
+                            <a href="#" class="text-decoration-none color-black col-12">
+                                <article class="container d-flex flex-column flex-lg-row-reverse gap-3 mt-3 mb-5 column-article">
+                                    <figure class="col-12 col-lg-8 mx-lg-4 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="img-sportday1" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 col-lg-3 d-flex flex-column align-items-center align-items-lg-start mx-auto">
+                                        <h4 class="text-center text-lg-start text-uppercase text-blue">La nuova america</h6>
+                                        <h3 class="text-center text-lg-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-lg-start">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6 border-top border-bottom">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-left">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="img-sportday2" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6 border-top border-bottom border-start">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="img-sportday3" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6 border-top border-bottom border-start ">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-7 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="img-sportday4" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-6 border-top border-bottom border-start ">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                        </section>
+                        <section class="d-flex flex-row flex-wrap mt-5" id="custom-content2">
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container col-12 d-flex flex-column flex-lg-row-reverse gap-3 mt-3 mb-5 column-article">
+                                    <figure class="col-12 col-lg-8 mx-lg-4 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 col-lg-3 d-flex flex-column align-items-center align-items-lg-start mx-auto">
+                                        <h4 class="text-center text-lg-start text-uppercase text-orange">La nuova america</h6>
+                                        <h3 class="text-center text-lg-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-lg-start">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-orange">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                        </section>
+                        <section id="life" class="d-flex flex-row flex-wrap">
+                            <h1 class="col-12 text-center my-5 underlined-blue ff-playfair-text h1-lg">Life</h1>
+                            <a href="#" class="text-decoration-none color-black">
+                                <article class="container col-12 d-flex flex-column flex-lg-row-reverse gap-3 mt-3 mb-5 column-article">
+                                    <figure class="col-12 col-lg-8 mx-lg-4 d-flex justify-content-center">
+                                        <img src="https://placehold.co/800x400" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                    <div class="col-11 col-lg-3 d-flex flex-column align-items-center align-items-lg-start mx-auto">
+                                        <h4 class="text-center text-lg-start text-uppercase text-blue">La nuova america</h6>
+                                        <h3 class="text-center text-lg-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5 text-lg-start">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5">
+                                    <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                    <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                        <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                    </figure>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#" class="text-decoration-none color-black col-12 col-lg-4 border-top border-bottom border-start">
+                                <article class="container d-flex gap-5 px-3 py-5">
+                                    <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                        <h4 class="text-justify"><span class="text-blue">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                        <span class="fs-5">di Raffaele Palladino</span>
+                                    </div>
+                                </article>
+                            </a>
+                        </section>
                     </div>
-                    <div class="d-flex col-10 position-relative justify-content-center align-items-center">
-                        <figure>
-                            <img src="https://placehold.co/400x500" alt="" class="img-fluid rounded-4">
-                        </figure>
-                        <div class="position-absolute text-left video-text-card">
-                            <span class="fs-4">Lorem Ipsum</span>
-                            <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
-                        </div>
+                    <div id="right-column2" class="col-lg-3 align-items-end border-start py-lg-5 order-lg-2 px-0">
+                        <section class="container col-12 order-lg-3 border-bottom">
+                            <div class="container col-11 d-md-flex d-lg-block flex-md-wrap mx-auto rounded-4 mt-5" id="video-wrapper">
+                                <div class="container col-md-5 col-lg-12 d-flex flex-column gap-2 mx-auto my-3 border-bottom">
+                                    <a href="#" class="div-link">
+                                    <figure class="position-relative mt-4">
+                                        <img src="https://placehold.co/400x200" alt="" class="img-fluid rounded">
+                                        <div class="position-absolute text-left play-icon">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </div>
+                                    </figure>
+                                    <div class="mb-4">
+                                        <span class="fs-4">Lorem Ipsum</span>
+                                        <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="container col-md-5 col-lg-12 d-flex flex-column gap-2 mx-auto my-3 border-bottom">
+                                    <a href="#" class="div-link">
+                                    <figure class="position-relative mt-4">
+                                        <img src="https://placehold.co/400x200" alt="" class="img-fluid rounded">
+                                        <div class="position-absolute text-left play-icon">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </div>
+                                    </figure>
+                                    <div class="mb-4">
+                                        <span class="fs-4">Lorem Ipsum</span>
+                                        <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="container col-md-5 col-lg-12 d-flex flex-column gap-2 mx-auto my-3 border-bottom">
+                                    <a href="#" class="div-link">
+                                    <figure class="position-relative mt-4">
+                                        <img src="https://placehold.co/400x200" alt="" class="img-fluid rounded">
+                                        <div class="position-absolute text-left play-icon">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </div>
+                                    </figure>
+                                    <div class="mb-4">
+                                        <span class="fs-4">Lorem Ipsum</span>
+                                        <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="container col-md-5 col-lg-12 d-flex flex-column gap-2 mx-auto my-3 border-bottom">
+                                    <a href="#" class="div-link">
+                                    <figure class="position-relative mt-4">
+                                        <img src="https://placehold.co/400x200" alt="" class="img-fluid rounded">
+                                        <div class="position-absolute text-left play-icon">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </div>
+                                    </figure>
+                                    <div class="mb-4">
+                                        <span class="fs-4">Lorem Ipsum</span>
+                                        <h3 class="fs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perspiciatis adipisci, libero cum laboriosam fugit magni amet.</h3>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h1 class="text-center my-5 underlined ff-playfair-text h1-lg">Dal Network</h1>
+                            <article class="container col-12 d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5 border-bottom">
+                                <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                    <h4 class="text-justify"><span class="text">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                    <span class="fs-5">di Raffaele Palladino</span>
+                                </div>
+                                <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                </figure>
+                            </article>
+                            <article class="container col-12 d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5 border-bottom">
+                                <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                    <h4 class="text-justify"><span class="text">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                    <span class="fs-5">di Raffaele Palladino</span>
+                                </div>
+                                <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                </figure>
+                            </article>
+                            <article class="container col-12 d-flex flex-lg-column-reverse gap-5 gap-lg-2 px-3 py-5 border-bottom">
+                                <div class="col-7 col-lg-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                    <h4 class="text-justify"><span class="text">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                    <span class="fs-5">di Raffaele Palladino</span>
+                                </div>
+                                <figure class="col-4 col-lg-12 d-flex align-items-center">
+                                    <img src="https://placehold.co/600x300" alt="article-img" class="img-fluid rounded">
+                                </figure>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="row d-flex flex-column flex-lg-row border-start border-end border-bottom px-0">
+                    <div id="full-row-column" class="px-0 pt-5 col-lg-12 order-lg-4">
+                        <section id="economia" class="d-flex flex-row flex-wrap justify-content-lg-between align-items-lg-center">
+                            <h1 class="col-12 text-center my-5 underlined ff-playfair-text h1-lg order-lg-1">Economia</h1>
+                            <div class="block-item col-lg-5 order-lg-3 d-lg-flex flex-lg-column">
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex flex-column gap-3 mt-3 mb-5 column-article">
+                                        <figure class="col-12 col-lg-11 mx-lg-auto d-flex justify-content-center">
+                                            <img src="https://placehold.co/800x400" alt="article-img" class="img-fluid rounded">
+                                        </figure>
+                                        <div class="col-11 d-flex flex-column align-items-center mx-auto">
+                                            <h3 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="block-item col-lg-3 order-lg-2 d-lg-flex flex-lg-column px-lg-3">
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="block-item col-lg-4 order-lg-4 px-lg-3">
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="#" class="text-decoration-none color-black">
+                                    <article class="container col-12 d-flex gap-5 px-3 py-5 border-top border-bottom order-lg-2">
+                                        <div class="col-12 d-flex flex-column justify-content-center align-items-left px-3">
+                                            <h4 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit officiis, aliquam iusto tempora nemo quibusdam ostrum?</h4>
+                                            <span class="fs-5">di Raffaele Palladino</span>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer class="container d-flex flex-column gap-5 align-items-center mt-5 border-top">
-        <div class="container d-flex flex-column align-items-center gap-2 mt-5">
-            <h1 class="h1-lg ff-playfair-text">la Repubblica</h1>
-            <span class="fs-5 color-gray">Lorem ipsum dolor sit amet</span>
-            <span class="fs-5 color-gray">P.iva: 0000000000</span>
-            <span class="fs-5 color-gray">ISSN: 0000-0000</span>
-        </div> 
-        <div class="container d-flex justify-content-center py-4 border-top border-bottom">
-            <button class="btn btn-primary px-5 py-2 fs-4">Abbonati</button>
-        </div>
-        <div class="container d-flex justify-content-center">
-            <div class="container d-flex flex-column justify-content-center">
-                <h4 class="fs-3">APP</h4>
-                <div class="d-flex justify-content-left">
-                    <a href="#" class="fs-3 color-gray">Iphone</a>
-                    <span class="mx-2 fs-3">|</span>
-                    <a href="#" class="fs-3 color-gray">Android</a>
+    <footer class="container d-flex flex-column flex-lg-row gap-5 gap-lg-3 mb-5 px-0 align-items-center align-items-lg-start border-start border-end border-bottom" id="footer">
+        <div class="container d-flex flex-column gap-5 col-lg-3 pb-5 cborder-bottom border-lg-bottom-none" id="left-footer">
+            <div class="container d-flex flex-column align-items-center align-items-lg-start gap-2 mt-5">
+                <h1 class="h1-lg ff-playfair-text">la Repubblica</h1>
+                <span class="fs-5 color-gray">Lorem ipsum dolor sit amet</span>
+                <span class="fs-5 color-gray">P.iva: 0000000000</span>
+                <span class="fs-5 color-gray">ISSN: 0000-0000</span>
+            </div> 
+            <div class="container d-flex justify-content-center justify-content-lg-start py-4 border-top border-bottom">
+                <button class="btn btn-primary px-5 py-2 fs-4">Abbonati</button>
+            </div>
+            <div class="container col-11 d-flex flex-lg-column gap-lg-4 justify-content-center mx-auto">
+                <div class="container d-flex flex-column justify-content-center px-0">
+                    <h4 class="fs-3">APP</h4>
+                    <div class="d-flex justify-content-left">
+                        <a href="#" class="fs-3 color-gray">Iphone</a>
+                        <span class="mx-2 fs-3">|</span>
+                        <a href="#" class="fs-3 color-gray">Android</a>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column justify-content-center px-0">
+                    <h4 class="fs-3">SOCIAL</h4>
+                    <div class="d-flex justify-content-left gap-4">
+                        <a href="#" class="link-style-none"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="#" class="link-style-none"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="#" class="link-style-none"><i class="bi bi-threads fs-3"></i></a>
+                        <a href="#" class="link-style-none"><i class="bi bi-linkedin fs-3"></i></a>
+                        <a href="#" class="link-style-none"><i class="bi bi-youtube fs-3"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="container d-flex flex-column justify-content-center">
-                <h4 class="fs-3">SOCIAL</h4>
-                <div class="d-flex justify-content-left gap-4">
-                    <a href="#" class="link-style-none"><i class="bi bi-facebook fs-3"></i></a>
-                    <a href="#" class="link-style-none"><i class="bi bi-instagram fs-3"></i></a>
-                    <a href="#" class="link-style-none"><i class="bi bi-threads fs-3"></i></a>
-                    <a href="#" class="link-style-none"><i class="bi bi-linkedin fs-3"></i></a>
-                    <a href="#" class="link-style-none"><i class="bi bi-youtube fs-3"></i></a>
+        </div>
+        <div class="container d-flex flex-column border-start ps-lg-4">
+            <div class="container col-12 d-flex justify-content-start border-bottom py-lg-5 pb-5">
+                <div class="col-11 col-lg-12 mx-auto mx-lg-0">
+                    <h4>Supplementi</h4>
+                    <div class="d-flex justify-content-left flex-wrap gap-4">
+                        <a href="#" class="fs-3 color-gray text-decoration-none col-auto">Lorem</a>
+                        <a href="#" class="fs-3 color-gray text-decoration-none col-auto">Lorem</a>
+                        <a href="#" class="fs-3 color-gray text-decoration-none col-auto">Lorem</a>
+                        <a href="#" class="fs-3 color-gray text-decoration-none col-auto">Lorem</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-12 d-flex flex-wrap justify-content-start my-5 mx-0">
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 my-4 mx-auto">
+                    <h4>Lorem Ipsum</h4>
+                    <div class="d-flex flex-column gap-1">
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                        <a href="#" class="fs-5 color-gray text-decoration-none">Lorem ipsum</a>
+                    </div>
                 </div>
             </div>
         </div>
