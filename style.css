@@ -84,17 +84,19 @@ header {
 }
 
 .underlined {
-    text-underline-offset: 0.8rem;
-    text-decoration: 0.4rem underline;
+    text-decoration-line: underline;
     text-decoration-color: orange;
-}
-
-.underlined-blue {
+    text-decoration-thickness: 0.4rem;
     text-underline-offset: 0.8rem;
-    text-decoration: 0.4rem underline;
-    text-decoration-color: #537daa;
 }
-
+  
+.underlined-blue {
+    text-decoration-line: underline;
+    text-decoration-color: #537daa;
+    text-decoration-thickness: 0.4rem;
+    text-underline-offset: 0.8rem;
+}
+  
 .text-orange {
     color: orange;
 }
