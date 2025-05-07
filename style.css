@@ -29,10 +29,6 @@ header {
     color: #7e7e7e;
 }
 
-p {
-    margin: 0!important;
-}
-
 .h1-lg {
     font-size: 2.6rem;
 }
@@ -61,8 +57,7 @@ header {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 #focus-article, #podcast div {
@@ -73,10 +68,6 @@ header {
 
 #lo-sport-del-giorno, #life {
     background-color: #e7f1ff;
-}
-
-#primo-piano, .column-article {
-    padding: 0 !important;
 }
 
 .rubrica-card {
@@ -139,17 +130,17 @@ header {
     font-size: 3rem;
 }
 
-.div-link {
+#right-column2 .div-link {
     text-decoration: none;
-    border-color: #666 !important;
+    border-color: #666;
 }
 
 .div-link h3, .div-link span {
     color: #eee;
 }
 
-#secondary-nav .btn-link:hover, #mobile-nav .btn-link:hover, #navbar .btn-link:hover, #megazine a h2:hover, 
-#lo-sport-del-giorno a h3:hover, #lo-sport-del-giorno a h4:hover, #life a h3:hover, #life a h4:hover, #footer a:hover {
+#secondary-nav .btn-link:hover, #mobile-nav .btn-link:hover, #navbar .btn-link:hover, #megazine a h3:hover, 
+#lo-sport-del-giorno a h3:hover, #life a h3:hover, #footer a:hover {
     color: #537daa;
 }
 
@@ -157,7 +148,7 @@ header {
     color: #e7f1ff;
 }
 
-#primo-piano a:hover, #il-giorno a:hover, #custom-content a:hover, #custom-content2 a h3:hover, #custom-content2 a h4:hover, #economia a h3:hover, #economia a h4:hover {
+#primo-piano a h3:hover, #il-giorno a h3:hover, #custom-content a h3:hover, #custom-content2 a h3:hover, #economia a h3:hover, #network a h3:hover, #edizioni-locali a h3:hover {
     color: #615e5e;
 }
 
@@ -168,6 +159,8 @@ header {
 #podcast a:hover div{
     background-color: #57697d;
 }
+
+/* custom borders */
 
 .cborder-bottom {
     border-bottom: 1px solid var(--bs-border-color);
@@ -200,27 +193,7 @@ header {
 .cborder-top-none {
     border-top: none;
 }
-
-.fw-500 {
-    font-weight: 500;
-}
-
-@media screen and (min-width: 768px){
-    .hide-on-desktop {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .hide-on-mobile {
-        display: none !important;
-    }
-
-    div .hide-on-mobile {
-        margin: 0 !important;
-    }
-}   
-
+  
 @media (min-width: 992px) {
     .border-xl-bottom {
         border-bottom: 1px solid var(--bs-border-color);
@@ -255,21 +228,38 @@ header {
     }
 }
 
-@media (min-width: 1200px) {
-    #economia article {
-        border-left: none !important;
-    }
+.fw-500 {
+    font-weight: 500;
+}
 
-    #economia div article:first-child {
-        border-top: none !important;
-    }
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
 
-    #economia div article:last-child {
-        border-bottom: none !important;
-    }
+.scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+	animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
 
-    #economia article:has(figure) {
-        border-left: 1px solid var(--bs-border-color) !important;
-        border-right: 1px solid var(--bs-border-color) !important;
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
 }
